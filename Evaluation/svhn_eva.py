@@ -70,6 +70,9 @@ def main():
         level=logging.INFO)
     logger.info(args)
 
+    if not os.path.exists('../advdata'):
+        os.mkdir('../advdata')
+
     _, test_loader = get_loaders('../../svhndata/', args.batch_size)
 
     if args.model == 'pr18':

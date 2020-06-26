@@ -43,6 +43,8 @@ def main():
         datefmt='%Y/%m/%d %H:%M:%S',
         level=logging.INFO)
     logger.info(args)
+    if not os.path.exists('../advdata'):
+        os.mkdir('../advdata')
 
     if args.model == 'A':
         model = classifier_A().cuda()
