@@ -1,0 +1,64 @@
+[2020/06/22 11:27:18] - Namespace(alpha=0.01, attack_type='deepfool', batch_size=128, defense='km', eps=0.3, fname='deepfool', iter=100, kappa=10, model='LeNet')
+[2020/06/22 11:27:21] - Accuracy with Clean images:0.9930
+[2020/06/22 11:27:21] - Accuracy with Adversarial images: 0.0218
+[2020/06/22 11:30:20] - Accuracy with Defenced images: 0.9072
+[2020/06/22 11:30:20] - Namespace(alpha=0.01, attack_type='deepfool', batch_size=128, defense='km', eps=0.3, fname='deepfool', iter=100, kappa=10, model='A')
+[2020/06/22 11:33:51] - Accuracy with Clean images:0.9921
+[2020/06/22 11:33:51] - Accuracy with Adversarial images: 0.0242
+[2020/06/22 11:36:45] - Accuracy with Defenced images: 0.9242
+[2020/06/22 11:36:46] - Namespace(alpha=0.01, attack_type='deepfool', batch_size=128, defense='km', eps=0.3, fname='deepfool', iter=100, kappa=10, model='B')
+[2020/06/22 11:41:20] - Accuracy with Clean images:0.9906
+[2020/06/22 11:41:20] - Accuracy with Adversarial images: 0.0535
+[2020/06/22 11:44:10] - Accuracy with Defenced images: 0.9784
+[2020/06/22 11:44:10] - Namespace(alpha=0.01, attack_type='deepfool', batch_size=128, defense='km', eps=0.3, fname='deepfool', iter=100, kappa=10, model='C')
+[2020/06/22 11:50:34] - Accuracy with Clean images:0.9871
+[2020/06/22 11:50:34] - Accuracy with Adversarial images: 0.1026
+[2020/06/22 11:53:19] - Accuracy with Defenced images: 0.9785
+[2020/06/22 11:53:20] - Namespace(alpha=0.01, attack_type='deepfool', batch_size=128, defense='bs', eps=0.3, fname='deepfool', iter=100, kappa=10, model='LeNet')
+[2020/06/22 11:53:22] - Accuracy with Clean images:0.9930
+[2020/06/22 11:53:22] - Accuracy with Adversarial images: 0.0218
+[2020/06/22 11:53:22] - Accuracy with Defenced images: 0.4243
+[2020/06/22 11:53:23] - Namespace(alpha=0.01, attack_type='deepfool', batch_size=128, defense='bs', eps=0.3, fname='deepfool', iter=100, kappa=10, model='A')
+[2020/06/22 11:53:26] - Accuracy with Clean images:0.9921
+[2020/06/22 11:53:26] - Accuracy with Adversarial images: 0.0242
+[2020/06/22 11:53:27] - Accuracy with Defenced images: 0.4700
+[2020/06/22 11:53:27] - Namespace(alpha=0.01, attack_type='deepfool', batch_size=128, defense='bs', eps=0.3, fname='deepfool', iter=100, kappa=10, model='B')
+[2020/06/22 11:53:30] - Accuracy with Clean images:0.9906
+[2020/06/22 11:53:31] - Accuracy with Adversarial images: 0.0535
+[2020/06/22 11:53:31] - Accuracy with Defenced images: 0.9090
+[2020/06/22 11:53:32] - Namespace(alpha=0.01, attack_type='deepfool', batch_size=128, defense='bs', eps=0.3, fname='deepfool', iter=100, kappa=10, model='C')
+[2020/06/22 11:53:35] - Accuracy with Clean images:0.9871
+[2020/06/22 11:53:35] - Accuracy with Adversarial images: 0.1026
+[2020/06/22 11:53:35] - Accuracy with Defenced images: 0.9128
+[2020/06/22 11:53:36] - Namespace(alpha=0.01, attack_type='deepfool', batch_size=128, defense='ms', eps=0.3, fname='deepfool', iter=100, kappa=10, model='LeNet')
+[2020/06/22 11:53:39] - Accuracy with Clean images:0.9930
+[2020/06/22 11:53:39] - Accuracy with Adversarial images: 0.0218
+[2020/06/22 11:53:39] - Accuracy with Defenced images: 0.5426
+[2020/06/22 11:53:40] - Namespace(alpha=0.01, attack_type='deepfool', batch_size=128, defense='ms', eps=0.3, fname='deepfool', iter=100, kappa=10, model='A')
+[2020/06/22 11:53:43] - Accuracy with Clean images:0.9921
+[2020/06/22 11:53:43] - Accuracy with Adversarial images: 0.0242
+[2020/06/22 11:53:43] - Accuracy with Defenced images: 0.4994
+[2020/06/22 11:53:44] - Namespace(alpha=0.01, attack_type='deepfool', batch_size=128, defense='ms', eps=0.3, fname='deepfool', iter=100, kappa=10, model='B')
+[2020/06/22 11:53:47] - Accuracy with Clean images:0.9906
+[2020/06/22 11:53:47] - Accuracy with Adversarial images: 0.0535
+[2020/06/22 11:53:48] - Accuracy with Defenced images: 0.4358
+[2020/06/22 11:53:49] - Namespace(alpha=0.01, attack_type='deepfool', batch_size=128, defense='ms', eps=0.3, fname='deepfool', iter=100, kappa=10, model='C')
+[2020/06/22 11:53:52] - Accuracy with Clean images:0.9871
+[2020/06/22 11:53:52] - Accuracy with Adversarial images: 0.1026
+[2020/06/22 11:53:52] - Accuracy with Defenced images: 0.8536
+[2020/06/22 11:53:53] - Namespace(alpha=0.01, attack_type='deepfool', batch_size=128, defense='jf', eps=0.3, fname='deepfool', iter=100, kappa=10, model='LeNet')
+[2020/06/22 11:53:56] - Accuracy with Clean images:0.9930
+[2020/06/22 11:53:56] - Accuracy with Adversarial images: 0.0218
+[2020/06/22 11:53:59] - Accuracy with Defenced images: 0.5624
+[2020/06/22 11:54:00] - Namespace(alpha=0.01, attack_type='deepfool', batch_size=128, defense='jf', eps=0.3, fname='deepfool', iter=100, kappa=10, model='A')
+[2020/06/22 11:54:03] - Accuracy with Clean images:0.9921
+[2020/06/22 11:54:03] - Accuracy with Adversarial images: 0.0242
+[2020/06/22 11:54:06] - Accuracy with Defenced images: 0.5598
+[2020/06/22 11:54:07] - Namespace(alpha=0.01, attack_type='deepfool', batch_size=128, defense='jf', eps=0.3, fname='deepfool', iter=100, kappa=10, model='B')
+[2020/06/22 11:54:10] - Accuracy with Clean images:0.9906
+[2020/06/22 11:54:10] - Accuracy with Adversarial images: 0.0535
+[2020/06/22 11:54:13] - Accuracy with Defenced images: 0.5944
+[2020/06/22 11:54:14] - Namespace(alpha=0.01, attack_type='deepfool', batch_size=128, defense='jf', eps=0.3, fname='deepfool', iter=100, kappa=10, model='C')
+[2020/06/22 11:54:17] - Accuracy with Clean images:0.9871
+[2020/06/22 11:54:17] - Accuracy with Adversarial images: 0.1026
+[2020/06/22 11:54:20] - Accuracy with Defenced images: 0.9315

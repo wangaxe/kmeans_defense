@@ -1,0 +1,96 @@
+[2020/06/24 22:44:30] - Namespace(alpha=2, attack_type='pgd', batch_size=128, defense='km', eps=8, fname='pgd', iter=20, k=2, model='pr18')
+[2020/06/24 22:44:38] - Accuracy with Clean images:0.9615
+[2020/06/24 22:44:41] - Accuracy with Adversarial images: 0.0048
+[2020/06/24 22:55:52] - Accuracy with Defenced images: 0.5504
+[2020/06/24 22:55:53] - Namespace(alpha=2, attack_type='pgd', batch_size=128, defense='km', eps=8, fname='pgd', iter=20, k=2, model='vgg11')
+[2020/06/24 22:57:28] - Accuracy with Clean images:0.9519
+[2020/06/24 22:57:29] - Accuracy with Adversarial images: 0.0086
+[2020/06/24 23:08:40] - Accuracy with Defenced images: 0.5151
+[2020/06/24 23:08:41] - Namespace(alpha=2, attack_type='pgd', batch_size=128, defense='km', eps=8, fname='pgd', iter=20, k=2, model='vgg16')
+[2020/06/24 23:11:33] - Accuracy with Clean images:0.9608
+[2020/06/24 23:11:36] - Accuracy with Adversarial images: 0.0096
+[2020/06/24 23:23:00] - Accuracy with Defenced images: 0.5394
+[2020/06/24 23:23:01] - Namespace(alpha=2, attack_type='pgd', batch_size=128, defense='km', eps=16, fname='pgd', iter=20, k=2, model='pr18')
+[2020/06/24 23:28:43] - Accuracy with Clean images:0.9615
+[2020/06/24 23:28:47] - Accuracy with Adversarial images: 0.0000
+[2020/06/24 23:40:32] - Accuracy with Defenced images: 0.3233
+[2020/06/24 23:40:33] - Namespace(alpha=2, attack_type='pgd', batch_size=128, defense='km', eps=16, fname='pgd', iter=20, k=2, model='vgg11')
+[2020/06/24 23:42:07] - Accuracy with Clean images:0.9519
+[2020/06/24 23:42:09] - Accuracy with Adversarial images: 0.0002
+[2020/06/24 23:53:43] - Accuracy with Defenced images: 0.2822
+[2020/06/24 23:53:44] - Namespace(alpha=2, attack_type='pgd', batch_size=128, defense='km', eps=16, fname='pgd', iter=20, k=2, model='vgg16')
+[2020/06/24 23:56:36] - Accuracy with Clean images:0.9608
+[2020/06/24 23:56:38] - Accuracy with Adversarial images: 0.0000
+[2020/06/25 00:08:24] - Accuracy with Defenced images: 0.3058
+[2020/06/25 00:08:25] - Namespace(alpha=2, attack_type='pgd', batch_size=128, defense='bs', eps=8, fname='pgd', iter=20, k=2, model='pr18')
+[2020/06/25 00:08:33] - Accuracy with Clean images:0.9615
+[2020/06/25 00:08:36] - Accuracy with Adversarial images: 0.0048
+[2020/06/25 00:08:40] - Accuracy with Defenced images: 0.1857
+[2020/06/25 00:08:41] - Namespace(alpha=2, attack_type='pgd', batch_size=128, defense='bs', eps=8, fname='pgd', iter=20, k=2, model='vgg11')
+[2020/06/25 00:08:48] - Accuracy with Clean images:0.9519
+[2020/06/25 00:08:49] - Accuracy with Adversarial images: 0.0086
+[2020/06/25 00:08:51] - Accuracy with Defenced images: 0.1772
+[2020/06/25 00:08:52] - Namespace(alpha=2, attack_type='pgd', batch_size=128, defense='bs', eps=8, fname='pgd', iter=20, k=2, model='vgg16')
+[2020/06/25 00:09:00] - Accuracy with Clean images:0.9608
+[2020/06/25 00:09:02] - Accuracy with Adversarial images: 0.0096
+[2020/06/25 00:09:05] - Accuracy with Defenced images: 0.1924
+[2020/06/25 00:09:06] - Namespace(alpha=2, attack_type='pgd', batch_size=128, defense='bs', eps=16, fname='pgd', iter=20, k=2, model='pr18')
+[2020/06/25 00:09:14] - Accuracy with Clean images:0.9615
+[2020/06/25 00:09:18] - Accuracy with Adversarial images: 0.0000
+[2020/06/25 00:09:21] - Accuracy with Defenced images: 0.0388
+[2020/06/25 00:09:22] - Namespace(alpha=2, attack_type='pgd', batch_size=128, defense='bs', eps=16, fname='pgd', iter=20, k=2, model='vgg11')
+[2020/06/25 00:09:29] - Accuracy with Clean images:0.9519
+[2020/06/25 00:09:30] - Accuracy with Adversarial images: 0.0002
+[2020/06/25 00:09:32] - Accuracy with Defenced images: 0.0344
+[2020/06/25 00:09:33] - Namespace(alpha=2, attack_type='pgd', batch_size=128, defense='bs', eps=16, fname='pgd', iter=20, k=2, model='vgg16')
+[2020/06/25 00:09:40] - Accuracy with Clean images:0.9608
+[2020/06/25 00:09:43] - Accuracy with Adversarial images: 0.0000
+[2020/06/25 00:09:45] - Accuracy with Defenced images: 0.0411
+[2020/06/25 00:09:46] - Namespace(alpha=2, attack_type='pgd', batch_size=128, defense='ms', eps=8, fname='pgd', iter=20, k=2, model='pr18')
+[2020/06/25 00:09:55] - Accuracy with Clean images:0.9615
+[2020/06/25 00:09:58] - Accuracy with Adversarial images: 0.0048
+[2020/06/25 00:10:03] - Accuracy with Defenced images: 0.0534
+[2020/06/25 00:10:04] - Namespace(alpha=2, attack_type='pgd', batch_size=128, defense='ms', eps=8, fname='pgd', iter=20, k=2, model='vgg11')
+[2020/06/25 00:10:10] - Accuracy with Clean images:0.9519
+[2020/06/25 00:10:12] - Accuracy with Adversarial images: 0.0086
+[2020/06/25 00:10:14] - Accuracy with Defenced images: 0.1356
+[2020/06/25 00:10:15] - Namespace(alpha=2, attack_type='pgd', batch_size=128, defense='ms', eps=8, fname='pgd', iter=20, k=2, model='vgg16')
+[2020/06/25 00:10:23] - Accuracy with Clean images:0.9608
+[2020/06/25 00:10:25] - Accuracy with Adversarial images: 0.0096
+[2020/06/25 00:10:29] - Accuracy with Defenced images: 0.0688
+[2020/06/25 00:10:30] - Namespace(alpha=2, attack_type='pgd', batch_size=128, defense='ms', eps=16, fname='pgd', iter=20, k=2, model='pr18')
+[2020/06/25 00:10:38] - Accuracy with Clean images:0.9615
+[2020/06/25 00:10:42] - Accuracy with Adversarial images: 0.0000
+[2020/06/25 00:10:46] - Accuracy with Defenced images: 0.0018
+[2020/06/25 00:10:47] - Namespace(alpha=2, attack_type='pgd', batch_size=128, defense='ms', eps=16, fname='pgd', iter=20, k=2, model='vgg11')
+[2020/06/25 00:10:54] - Accuracy with Clean images:0.9519
+[2020/06/25 00:10:55] - Accuracy with Adversarial images: 0.0002
+[2020/06/25 00:10:58] - Accuracy with Defenced images: 0.0150
+[2020/06/25 00:10:59] - Namespace(alpha=2, attack_type='pgd', batch_size=128, defense='ms', eps=16, fname='pgd', iter=20, k=2, model='vgg16')
+[2020/06/25 00:11:06] - Accuracy with Clean images:0.9608
+[2020/06/25 00:11:09] - Accuracy with Adversarial images: 0.0000
+[2020/06/25 00:11:12] - Accuracy with Defenced images: 0.0020
+[2020/06/25 00:11:13] - Namespace(alpha=2, attack_type='pgd', batch_size=128, defense='jf', eps=8, fname='pgd', iter=20, k=2, model='pr18')
+[2020/06/25 00:11:21] - Accuracy with Clean images:0.9615
+[2020/06/25 00:11:25] - Accuracy with Adversarial images: 0.0048
+[2020/06/25 00:11:38] - Accuracy with Defenced images: 0.4532
+[2020/06/25 00:11:39] - Namespace(alpha=2, attack_type='pgd', batch_size=128, defense='jf', eps=8, fname='pgd', iter=20, k=2, model='vgg11')
+[2020/06/25 00:11:46] - Accuracy with Clean images:0.9519
+[2020/06/25 00:11:47] - Accuracy with Adversarial images: 0.0086
+[2020/06/25 00:11:58] - Accuracy with Defenced images: 0.4983
+[2020/06/25 00:11:59] - Namespace(alpha=2, attack_type='pgd', batch_size=128, defense='jf', eps=8, fname='pgd', iter=20, k=2, model='vgg16')
+[2020/06/25 00:12:07] - Accuracy with Clean images:0.9608
+[2020/06/25 00:12:09] - Accuracy with Adversarial images: 0.0096
+[2020/06/25 00:12:22] - Accuracy with Defenced images: 0.3525
+[2020/06/25 00:12:23] - Namespace(alpha=2, attack_type='pgd', batch_size=128, defense='jf', eps=16, fname='pgd', iter=20, k=2, model='pr18')
+[2020/06/25 00:12:31] - Accuracy with Clean images:0.9615
+[2020/06/25 00:12:35] - Accuracy with Adversarial images: 0.0000
+[2020/06/25 00:12:48] - Accuracy with Defenced images: 0.0647
+[2020/06/25 00:12:49] - Namespace(alpha=2, attack_type='pgd', batch_size=128, defense='jf', eps=16, fname='pgd', iter=20, k=2, model='vgg11')
+[2020/06/25 00:12:55] - Accuracy with Clean images:0.9519
+[2020/06/25 00:12:57] - Accuracy with Adversarial images: 0.0002
+[2020/06/25 00:13:08] - Accuracy with Defenced images: 0.1091
+[2020/06/25 00:13:09] - Namespace(alpha=2, attack_type='pgd', batch_size=128, defense='jf', eps=16, fname='pgd', iter=20, k=2, model='vgg16')
+[2020/06/25 00:13:16] - Accuracy with Clean images:0.9608
+[2020/06/25 00:13:19] - Accuracy with Adversarial images: 0.0000
+[2020/06/25 00:13:31] - Accuracy with Defenced images: 0.0254
