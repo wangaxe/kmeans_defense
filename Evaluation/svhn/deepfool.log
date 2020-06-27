@@ -1,0 +1,48 @@
+[2020/06/25 00:13:32] - Namespace(alpha=2, attack_type='deepfool', batch_size=128, defense='km', eps=8, fname='deepfool', iter=100, k=2, model='pr18')
+[2020/06/25 00:38:37] - Accuracy with Clean images:0.9615
+[2020/06/25 00:38:40] - Accuracy with Adversarial images: 0.0249
+[2020/06/25 00:49:31] - Accuracy with Defenced images: 0.7666
+[2020/06/25 00:49:32] - Namespace(alpha=2, attack_type='deepfool', batch_size=128, defense='km', eps=8, fname='deepfool', iter=100, k=2, model='vgg11')
+[2020/06/25 01:04:05] - Accuracy with Clean images:0.9519
+[2020/06/25 01:04:07] - Accuracy with Adversarial images: 0.0299
+[2020/06/25 01:14:59] - Accuracy with Defenced images: 0.7737
+[2020/06/25 01:15:00] - Namespace(alpha=2, attack_type='deepfool', batch_size=128, defense='km', eps=8, fname='deepfool', iter=100, k=2, model='vgg16')
+[2020/06/25 01:30:20] - Accuracy with Clean images:0.9608
+[2020/06/25 01:30:23] - Accuracy with Adversarial images: 0.0240
+[2020/06/25 01:41:30] - Accuracy with Defenced images: 0.6573
+[2020/06/25 01:41:31] - Namespace(alpha=2, attack_type='deepfool', batch_size=128, defense='bs', eps=8, fname='deepfool', iter=100, k=2, model='pr18')
+[2020/06/25 01:41:39] - Accuracy with Clean images:0.9615
+[2020/06/25 01:41:42] - Accuracy with Adversarial images: 0.0249
+[2020/06/25 01:41:46] - Accuracy with Defenced images: 0.5076
+[2020/06/25 01:41:47] - Namespace(alpha=2, attack_type='deepfool', batch_size=128, defense='bs', eps=8, fname='deepfool', iter=100, k=2, model='vgg11')
+[2020/06/25 01:41:53] - Accuracy with Clean images:0.9519
+[2020/06/25 01:41:54] - Accuracy with Adversarial images: 0.0299
+[2020/06/25 01:41:56] - Accuracy with Defenced images: 0.5097
+[2020/06/25 01:41:57] - Namespace(alpha=2, attack_type='deepfool', batch_size=128, defense='bs', eps=8, fname='deepfool', iter=100, k=2, model='vgg16')
+[2020/06/25 01:42:04] - Accuracy with Clean images:0.9608
+[2020/06/25 01:42:06] - Accuracy with Adversarial images: 0.0240
+[2020/06/25 01:42:09] - Accuracy with Defenced images: 0.3445
+[2020/06/25 01:42:10] - Namespace(alpha=2, attack_type='deepfool', batch_size=128, defense='ms', eps=8, fname='deepfool', iter=100, k=2, model='pr18')
+[2020/06/25 01:42:18] - Accuracy with Clean images:0.9615
+[2020/06/25 01:42:21] - Accuracy with Adversarial images: 0.0249
+[2020/06/25 01:42:26] - Accuracy with Defenced images: 0.5117
+[2020/06/25 01:42:27] - Namespace(alpha=2, attack_type='deepfool', batch_size=128, defense='ms', eps=8, fname='deepfool', iter=100, k=2, model='vgg11')
+[2020/06/25 01:42:33] - Accuracy with Clean images:0.9519
+[2020/06/25 01:42:34] - Accuracy with Adversarial images: 0.0299
+[2020/06/25 01:42:37] - Accuracy with Defenced images: 0.8471
+[2020/06/25 01:42:38] - Namespace(alpha=2, attack_type='deepfool', batch_size=128, defense='ms', eps=8, fname='deepfool', iter=100, k=2, model='vgg16')
+[2020/06/25 01:42:45] - Accuracy with Clean images:0.9608
+[2020/06/25 01:42:48] - Accuracy with Adversarial images: 0.0240
+[2020/06/25 01:42:52] - Accuracy with Defenced images: 0.2249
+[2020/06/25 01:42:53] - Namespace(alpha=2, attack_type='deepfool', batch_size=128, defense='jf', eps=8, fname='deepfool', iter=100, k=2, model='pr18')
+[2020/06/25 01:43:00] - Accuracy with Clean images:0.9615
+[2020/06/25 01:43:04] - Accuracy with Adversarial images: 0.0249
+[2020/06/25 01:43:17] - Accuracy with Defenced images: 0.7492
+[2020/06/25 01:43:18] - Namespace(alpha=2, attack_type='deepfool', batch_size=128, defense='jf', eps=8, fname='deepfool', iter=100, k=2, model='vgg11')
+[2020/06/25 01:43:24] - Accuracy with Clean images:0.9519
+[2020/06/25 01:43:26] - Accuracy with Adversarial images: 0.0299
+[2020/06/25 01:43:37] - Accuracy with Defenced images: 0.8212
+[2020/06/25 01:43:38] - Namespace(alpha=2, attack_type='deepfool', batch_size=128, defense='jf', eps=8, fname='deepfool', iter=100, k=2, model='vgg16')
+[2020/06/25 01:43:45] - Accuracy with Clean images:0.9608
+[2020/06/25 01:43:47] - Accuracy with Adversarial images: 0.0240
+[2020/06/25 01:43:59] - Accuracy with Defenced images: 0.4717
