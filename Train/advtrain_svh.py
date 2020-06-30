@@ -18,6 +18,8 @@ from torch.utils.data import DataLoader, Dataset
 from preact_resnet import PreActResNet18
 from vgg import VGG11, VGG16
 
+lower_limit = torch.zeros(3).view(3,1,1).cuda()
+upper_limit = torch.ones(3).view(3,1,1).cuda()
 
 def clamp(X, lower_limit, upper_limit):
     return torch.max(torch.min(X, upper_limit), lower_limit)
@@ -92,11 +94,10 @@ def attack_pgd(model, X, y, epsilon, alpha, attack_iters, restarts, random_init=
     return max_delta
 
 def evaluate_pgd(test_loader, model, attack_iters, restarts, random_init=True, quick=None):
-    epsilon = (8 / 255.) / std
-    if attack_iters == 1:
-        alpha = (8 / 255.) / std
-    else:
-        alpha = (2 / 255.) / std
+    epsilon = torch.ones(3).view(3,1,1).cuda()
+    epsilon = epsilon * 8 / 255.
+    alpha = torch.ones(3).view(3,1,1).cuda()
+    alpha = alpha * 2 / 255.
     pgd_loss = 0
     pgd_acc = 0
     n = 0
@@ -157,9 +158,7 @@ def main():
     epsilon = torch.ones(3).view(3,1,1).cuda()
     epsilon = epsilon * args.eps / 255.
     alpha = torch.ones(3).view(3,1,1).cuda()
-    epsialphalon = epsilon * args.alpha / 255.
-    lower_limit = torch.zeros(3).view(3,1,1).cuda()
-    upper_limit = torch.ones(3).view(3,1,1).cuda()
+    alpha = alpha * args.alpha / 255.
 
     train_loader, test_loader = get_loaders(args.data_dir, args.batch_size)
     criterion = nn.CrossEntropyLoss()
