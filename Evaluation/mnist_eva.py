@@ -61,7 +61,7 @@ def main():
     model.load_state_dict(checkpoint)
     model.eval()
 
-    mnist_test = datasets.MNIST('../../dataset/', train=False, download=True, transform=transforms.ToTensor())
+    mnist_test = datasets.MNIST('../../datasets/', train=False, download=True, transform=transforms.ToTensor())
     test_loader = torch.utils.data.DataLoader(mnist_test, batch_size=128, shuffle=False)
 
     if args.attack_type == 'pgd':
