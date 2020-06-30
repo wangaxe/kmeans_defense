@@ -31,6 +31,7 @@ def get_args():
     parser.add_argument('--defense', type=str, default='none',
                         choices=['km','mbkm','bs','ms','jf'])
     parser.add_argument('--k', type=int, default=2)
+    parser.add_argument('--data-dir', type=str, default='../../datasets/')
     return parser.parse_args()
 
 def get_loaders(dir_, batch_size):
@@ -73,7 +74,7 @@ def main():
     if not os.path.exists('../advdata'):
         os.mkdir('../advdata')
 
-    _, test_loader = get_loaders('../../svhndata/', args.batch_size)
+    _, test_loader = get_loaders(args.data_dir, args.batch_size)
 
     if args.model == 'pr18':
         model = PreActResNet18().cuda()

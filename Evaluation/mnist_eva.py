@@ -12,7 +12,7 @@ import torchattacks
 from advertorch.defenses import MedianSmoothing2D, BitSqueezing, JPEGFilter
 
 from mnist_net import Le_Net, classifier_A, classifier_B, classifier_C
-from cluster import Kmeans_cluster, mb_Kmeans_cluster
+from cluster import Kmeans_cluster
 
 def get_args():
     parser = argparse.ArgumentParser()
@@ -28,8 +28,9 @@ def get_args():
     parser.add_argument('--alpha', type=float, default=0.01)
 
     parser.add_argument('--defense', type=str, default='none',
-                        choices=['km','mbkm','bs','ms','jf'])
+                        choices=['km','bs','ms','jf'])
     parser.add_argument('--k', type=int, default=2)
+    parser.add_argument('--data-dir', type=str, default='../../datasets/')
     return parser.parse_args()
 
 def main():
@@ -61,7 +62,7 @@ def main():
     model.load_state_dict(checkpoint)
     model.eval()
 
-    mnist_test = datasets.MNIST('../../datasets/', train=False, download=True, transform=transforms.ToTensor())
+    mnist_test = datasets.MNIST(args.data_dir, train=False, download=True, transform=transforms.ToTensor())
     test_loader = torch.utils.data.DataLoader(mnist_test, batch_size=128, shuffle=False)
 
     if args.attack_type == 'pgd':
@@ -119,8 +120,6 @@ def main():
         def cluster_def(in_tensor,k=args.k):
             return Kmeans_cluster(in_tensor,k)
         defense = cluster_def
-    elif args.defense == 'mbkm':
-        defense = mb_Kmeans_cluster
     elif args.defense == 'bs':
         bits_squeezing = BitSqueezing(bit_depth=2)
         defense = nn.Sequential(
