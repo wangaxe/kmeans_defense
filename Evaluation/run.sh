@@ -1,30 +1,38 @@
-python mnist_eva.py --defense km --model LeNet --attack-type pgd --eps 0.1 
-python mnist_eva.py --defense km --model LeNet --attack-type pgd --eps 0.15
-python mnist_eva.py --defense km --model LeNet --attack-type pgd --eps 0.2
-python mnist_eva.py --defense km --model LeNet --attack-type pgd --eps 0.25
-python mnist_eva.py --defense km --model LeNet --attack-type pgd --eps 0.3
-python mnist_eva.py --defense km --model LeNet --attack-type pgd --eps 0.35
+# python mnist_eva.py --defense km --model LeNet --attack-type pgd --eps 0.1 
+# python mnist_eva.py --defense km --model LeNet --attack-type pgd --eps 0.15
+# python mnist_eva.py --defense km --model LeNet --attack-type pgd --eps 0.2
+# python mnist_eva.py --defense km --model LeNet --attack-type pgd --eps 0.25
+# python mnist_eva.py --defense km --model LeNet --attack-type pgd --eps 0.3
+# python mnist_eva.py --defense km --model LeNet --attack-type pgd --eps 0.35
+python mnist_eva.py --defense km --model LeNet --attack-type pgd --eps 0.40
+python mnist_eva.py --defense km --model LeNet --attack-type pgd --eps 0.45
 
-python mnist_eva.py --defense km --model A --attack-type pgd --eps 0.1 
-python mnist_eva.py --defense km --model A --attack-type pgd --eps 0.15
-python mnist_eva.py --defense km --model A --attack-type pgd --eps 0.2
-python mnist_eva.py --defense km --model A --attack-type pgd --eps 0.25
-python mnist_eva.py --defense km --model A --attack-type pgd --eps 0.3
-python mnist_eva.py --defense km --model A --attack-type pgd --eps 0.35
+# python mnist_eva.py --defense km --model A --attack-type pgd --eps 0.1 
+# python mnist_eva.py --defense km --model A --attack-type pgd --eps 0.15
+# python mnist_eva.py --defense km --model A --attack-type pgd --eps 0.2
+# python mnist_eva.py --defense km --model A --attack-type pgd --eps 0.25
+# python mnist_eva.py --defense km --model A --attack-type pgd --eps 0.3
+# python mnist_eva.py --defense km --model A --attack-type pgd --eps 0.35
+python mnist_eva.py --defense km --model A --attack-type pgd --eps 0.4
+python mnist_eva.py --defense km --model A --attack-type pgd --eps 0.45
 
-python mnist_eva.py --defense km --model B --attack-type pgd --eps 0.1 
-python mnist_eva.py --defense km --model B --attack-type pgd --eps 0.15
-python mnist_eva.py --defense km --model B --attack-type pgd --eps 0.2
-python mnist_eva.py --defense km --model B --attack-type pgd --eps 0.25
-python mnist_eva.py --defense km --model B --attack-type pgd --eps 0.3
-python mnist_eva.py --defense km --model B --attack-type pgd --eps 0.35
+# python mnist_eva.py --defense km --model B --attack-type pgd --eps 0.1 
+# python mnist_eva.py --defense km --model B --attack-type pgd --eps 0.15
+# python mnist_eva.py --defense km --model B --attack-type pgd --eps 0.2
+# python mnist_eva.py --defense km --model B --attack-type pgd --eps 0.25
+# python mnist_eva.py --defense km --model B --attack-type pgd --eps 0.3
+# python mnist_eva.py --defense km --model B --attack-type pgd --eps 0.35
+python mnist_eva.py --defense km --model B --attack-type pgd --eps 0.4
+python mnist_eva.py --defense km --model B --attack-type pgd --eps 0.45
 
-python mnist_eva.py --defense km --model C --attack-type pgd --eps 0.1 
-python mnist_eva.py --defense km --model C --attack-type pgd --eps 0.15
-python mnist_eva.py --defense km --model C --attack-type pgd --eps 0.2
-python mnist_eva.py --defense km --model C --attack-type pgd --eps 0.25
-python mnist_eva.py --defense km --model C --attack-type pgd --eps 0.3
-python mnist_eva.py --defense km --model C --attack-type pgd --eps 0.35
+# python mnist_eva.py --defense km --model C --attack-type pgd --eps 0.1 
+# python mnist_eva.py --defense km --model C --attack-type pgd --eps 0.15
+# python mnist_eva.py --defense km --model C --attack-type pgd --eps 0.2
+# python mnist_eva.py --defense km --model C --attack-type pgd --eps 0.25
+# python mnist_eva.py --defense km --model C --attack-type pgd --eps 0.3
+# python mnist_eva.py --defense km --model C --attack-type pgd --eps 0.35
+python mnist_eva.py --defense km --model C --attack-type pgd --eps 0.4
+python mnist_eva.py --defense km --model C --attack-type pgd --eps 0.45
 
 # python mnist_eva.py --defense km --model LeNet --attack-type fgsm --eps 0.3 --fname fgsm
 # python mnist_eva.py --defense km --model A --attack-type fgsm --eps 0.3 --fname fgsm
