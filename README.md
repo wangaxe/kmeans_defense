@@ -1,2 +1,2 @@
 # kmeans_defense
-Requirements: pytorch, torchattacks, and advertorch.
+Requirements: scikit-learn, pytorch, torchattacks, and advertorch.
