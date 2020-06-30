@@ -117,7 +117,7 @@ def evaluate_pgd(test_loader, model, attack_iters, restarts, random_init=True, q
 def get_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('--batch-size', default=128, type=int)
-    parser.add_argument('--data-dir', default='../../svhndata/', type=str)
+    parser.add_argument('--data-dir', default='/mnt/storage0_8/torch_datasets/svhn-data', type=str)
     parser.add_argument('--epochs', default=10, type=int)
     parser.add_argument('--lr-schedule', default='cyclic', type=str, choices=['cyclic', 'flat'])
     parser.add_argument('--lr-min', default=0., type=float)
@@ -125,6 +125,7 @@ def get_args():
     parser.add_argument('--weight-decay', default=5e-4, type=float)
     parser.add_argument('--momentum', default=0.9, type=float)
     parser.add_argument('--eps', default=8, type=int)
+    parser.add_argument('--alpha', default=2, type=int)
     parser.add_argument('--attack-iters', default=7, type=int)
     parser.add_argument('--seed', default=0, type=int)
     parser.add_argument('--fname', default='train', type=str)
@@ -152,6 +153,14 @@ def main():
     np.random.seed(args.seed)
     torch.manual_seed(args.seed)
     torch.cuda.manual_seed(args.seed)
+
+    epsilon = torch.ones(3).view(3,1,1).cuda()
+    epsilon = epsilon * args.eps / 255.
+    alpha = torch.ones(3).view(3,1,1).cuda()
+    epsialphalon = epsilon * args.alpha / 255.
+    lower_limit = torch.zeros(3).view(3,1,1).cuda()
+    upper_limit = torch.ones(3).view(3,1,1).cuda()
+
     train_loader, test_loader = get_loaders(args.data_dir, args.batch_size)
     criterion = nn.CrossEntropyLoss()
     if args.model == 'pr18':
@@ -188,9 +197,9 @@ def main():
         for i, (X, y) in enumerate(train_loader):
             X, y = X.cuda(), y.cuda()
             delta = torch.zeros_like(X).cuda()
-            for i in range(3):
-                    delta[:, i, :, :].uniform_(-args.eps/255., args.eps/255.)
-                delta.data = clamp(delta, 0 - X, 1 - X)
+            for i in range(len(epsilon)):
+                delta[:, i, :, :].uniform_(-epsilon[i][0][0].item(), epsilon[i][0][0].item())
+            delta.data = clamp(delta, lower_limit - X, upper_limit - X)
             delta.requires_grad = True
 
             for _ in range(args.attack_iters):
@@ -236,9 +245,11 @@ def main():
     model_test.float()
     model_test.eval()
     test_loss, test_acc = clean_evaluate(test_loader, model_test)
+    pgd20_loss, pgd20_acc = evaluate_pgd(test_loader, model_test, 20, 1)
 
-    logger.info('Test Loss \t Test Acc')
-    logger.info('{:.4f} \t\t {:.4f} '.format(test_loss, test_acc))
+    logger.info('Test Loss \t Test Acc \t PGD20 Loss \t PGD20 Acc')
+    logger.info('{:.4f} \t\t {:.4f} \t  {:.4f} \t  {:.4f}'.format(
+        test_loss, test_acc, pgd20_loss, pgd20_acc))
 
 if __name__ == "__main__":
     main()
