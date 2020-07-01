@@ -31,7 +31,7 @@ def get_args():
     parser.add_argument('--defense', type=str, default='none',
                         choices=['km','mbkm','bs','ms','jf'])
     parser.add_argument('--k', type=int, default=2)
-    parser.add_argument('--data-dir', type=str, default='../../datasets/')
+    parser.add_argument('--data-dir', type=str, default='/mnt/storage0_8/torch_datasets/svhn-data')
     return parser.parse_args()
 
 def get_loaders(dir_, batch_size):

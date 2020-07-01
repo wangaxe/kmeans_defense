@@ -1,6 +1,7 @@
 import argparse
 import logging
 import os
+from itertools import permutations
 
 import torch
 import torch.nn as nn
@@ -18,20 +19,19 @@ from vgg import VGG11, VGG16
 def get_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('--batch_size', type=int, default=128, help='batch_size')
-    parser.add_argument('--fname', type=str, default='test')
+    parser.add_argument('--fname', type=str, default='ensumble')
     parser.add_argument('--model',default='pr18', type=str,
                         choices=['pr18', 'vgg11', 'vgg16'])
     parser.add_argument('--attack-type', type=str, default='fgsm',
                     choices=['fgsm', 'pgd', 'rfgsm', 'deepfool'])
     parser.add_argument('--iter', type=int, default=20,
                         help='The number of iterations for iterative attacks')
-    parser.add_argument('--eps', type=int, default=8)
+    parser.add_argument('--eps', type=int, default=16)
     parser.add_argument('--alpha', type=float, default=2)
     parser.add_argument('--adv-train', type=bool, default=False)
-    parser.add_argument('--defense', type=str, default='km',
-                        choices=['km','bs','ms','jf'])
+    parser.add_argument('--nb-defense', type=int, default=1)
     parser.add_argument('--k', type=int, default=2)
-    parser.add_argument('--data-dir', type=str, default='../../datasets/')
+    parser.add_argument('--data-dir', type=str, default='/mnt/storage0_8/torch_datasets/svhn-data')
     return parser.parse_args()
 
 def get_loaders(dir_, batch_size):
@@ -139,32 +139,34 @@ def main():
 
     logger.info('Accuracy with Adversarial images: %.4f',(float(correct) / total))
 
-    # if args.defense == 'km':
-    #     def cluster_def(in_tensor,k=args.k):
-    #         return Kmeans_cluster(in_tensor,k)
-    #     defense = cluster_def
-    # elif args.defense == 'bs':
-    bits_squeezing = BitSqueezing(bit_depth=4)
-    median_filter = MedianSmoothing2D(kernel_size=3)
-    jpeg_filter = JPEGFilter(10)
-    defense = nn.Sequential(
-    jpeg_filter,
-    bits_squeezing,
-    median_filter,)
 
-    model.eval()
-    correct = 0
-    total = 0
-    for images, labels in adv_loader:
-        images = images.cuda()
-        images = defense(images)
-        images = Kmeans_cluster(in_tensor,args.k)
-        outputs = model(images)
-        _, predicted = torch.max(outputs.data, 1)
-        total += labels.size(0)
-        correct += (predicted == labels.cuda()).sum()
-        
-    logger.info('Accuracy with Defenced images: %.4f',(float(correct) / total))
+    bits_squeezing = BitSqueezing(bit_depth=4)
+    bs = nn.Sequential(bits_squeezing,)
+
+    median_filter = MedianSmoothing2D(kernel_size=3)
+    ms = nn.Sequential(median_filter,)
+
+    jpeg_filter = JPEGFilter(10)
+    jf = nn.Sequential(jpeg_filter,)
+
+    all_methods = [bs, ms, jf, Kmeans_cluster]
+
+    defense_combins = permutations(all_methods, args.nb_defense)
+
+    for comb in defense_combins:
+        model.eval()
+        correct = 0
+        total = 0
+        for images, labels in adv_loader:
+            images = images.cuda()
+            for df_method in comb:
+                images = df_method(images)
+            outputs = model(images)
+            _, predicted = torch.max(outputs.data, 1)
+            total += labels.size(0)
+            correct += (predicted == labels.cuda()).sum()
+        logger.info(comb)
+        logger.info('Accuracy with Defenced images: %.4f',(float(correct) / total))
 
 if __name__ == "__main__":
     main()

@@ -94,3 +94,20 @@
 [2020/06/25 00:13:16] - Accuracy with Clean images:0.9608
 [2020/06/25 00:13:19] - Accuracy with Adversarial images: 0.0000
 [2020/06/25 00:13:31] - Accuracy with Defenced images: 0.0254
+[2020/07/01 00:02:15] - Namespace(alpha=2, attack_type='pgd', batch_size=128, data_dir='../../datasets/', defense='km', eps=8, fname='pgd', iter=20, k=2, model='pr18')
+[2020/07/01 00:03:56] - Namespace(alpha=2, attack_type='pgd', batch_size=128, data_dir='/mnt/storage0_8/torch_datasets/svhn-data', defense='km', eps=8, fname='pgd', iter=20, k=2, model='pr18')
+[2020/07/01 00:08:03] - Accuracy with Clean images:0.9615
+[2020/07/01 00:08:06] - Accuracy with Adversarial images: 0.0048
+[2020/07/01 00:17:30] - Accuracy with Defenced images: 0.5507
+[2020/07/01 00:17:31] - Namespace(alpha=2, attack_type='pgd', batch_size=128, data_dir='/mnt/storage0_8/torch_datasets/svhn-data', defense='km', eps=8, fname='pgd', iter=20, k=3, model='pr18')
+[2020/07/01 00:17:38] - Accuracy with Clean images:0.9615
+[2020/07/01 00:17:40] - Accuracy with Adversarial images: 0.0048
+[2020/07/01 00:32:04] - Accuracy with Defenced images: 0.4211
+[2020/07/01 00:32:05] - Namespace(alpha=2, attack_type='pgd', batch_size=128, data_dir='/mnt/storage0_8/torch_datasets/svhn-data', defense='km', eps=8, fname='pgd', iter=20, k=4, model='pr18')
+[2020/07/01 00:32:12] - Accuracy with Clean images:0.9615
+[2020/07/01 00:32:14] - Accuracy with Adversarial images: 0.0048
+[2020/07/01 00:51:00] - Accuracy with Defenced images: 0.3470
+[2020/07/01 00:51:01] - Namespace(alpha=2, attack_type='pgd', batch_size=128, data_dir='/mnt/storage0_8/torch_datasets/svhn-data', defense='km', eps=8, fname='pgd', iter=20, k=5, model='pr18')
+[2020/07/01 00:51:07] - Accuracy with Clean images:0.9615
+[2020/07/01 00:51:10] - Accuracy with Adversarial images: 0.0048
+[2020/07/01 01:13:07] - Accuracy with Defenced images: 0.2774

@@ -46,3 +46,19 @@
 [2020/06/25 01:43:45] - Accuracy with Clean images:0.9608
 [2020/06/25 01:43:47] - Accuracy with Adversarial images: 0.0240
 [2020/06/25 01:43:59] - Accuracy with Defenced images: 0.4717
+[2020/07/01 01:13:08] - Namespace(alpha=2, attack_type='deepfool', batch_size=128, data_dir='/mnt/storage0_8/torch_datasets/svhn-data', defense='km', eps=8, fname='deepfool', iter=100, k=2, model='pr18')
+[2020/07/01 01:58:56] - Accuracy with Clean images:0.9615
+[2020/07/01 01:58:58] - Accuracy with Adversarial images: 0.0249
+[2020/07/01 02:08:14] - Accuracy with Defenced images: 0.7664
+[2020/07/01 02:08:16] - Namespace(alpha=2, attack_type='deepfool', batch_size=128, data_dir='/mnt/storage0_8/torch_datasets/svhn-data', defense='km', eps=8, fname='deepfool', iter=100, k=3, model='pr18')
+[2020/07/01 02:08:22] - Accuracy with Clean images:0.9615
+[2020/07/01 02:08:24] - Accuracy with Adversarial images: 0.0249
+[2020/07/01 02:22:24] - Accuracy with Defenced images: 0.7999
+[2020/07/01 02:22:25] - Namespace(alpha=2, attack_type='deepfool', batch_size=128, data_dir='/mnt/storage0_8/torch_datasets/svhn-data', defense='km', eps=8, fname='deepfool', iter=100, k=4, model='pr18')
+[2020/07/01 02:22:31] - Accuracy with Clean images:0.9615
+[2020/07/01 02:22:34] - Accuracy with Adversarial images: 0.0249
+[2020/07/01 02:40:14] - Accuracy with Defenced images: 0.7911
+[2020/07/01 02:40:15] - Namespace(alpha=2, attack_type='deepfool', batch_size=128, data_dir='/mnt/storage0_8/torch_datasets/svhn-data', defense='km', eps=8, fname='deepfool', iter=100, k=5, model='pr18')
+[2020/07/01 02:40:21] - Accuracy with Clean images:0.9615
+[2020/07/01 02:40:24] - Accuracy with Adversarial images: 0.0249
+[2020/07/01 03:01:08] - Accuracy with Defenced images: 0.7687
