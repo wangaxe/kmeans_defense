@@ -78,3 +78,165 @@
   (0): JPEGFilter(EmptyDefense (Identity))
 ))
 [2020/07/01 12:16:24] - Accuracy with Defenced images: 0.3682
+[2020/07/01 12:39:41] - Namespace(adv_train=False, alpha=2, attack_type='fgsm', batch_size=128, data_dir='/mnt/storage0_8/torch_datasets/svhn-data', eps=16, fname='ensumble', iter=20, k=2, model='pr18', nb_defense=3)
+[2020/07/01 12:39:47] - Accuracy with Clean images:0.9615
+[2020/07/01 12:39:49] - Accuracy with Adversarial images: 0.0975
+[2020/07/01 12:40:02] - (Sequential(
+  (0): BitSqueezing(EmptyDefense (Identity))
+), Sequential(
+  (0): MedianSmoothing2D(EmptyDefense (Identity))
+), Sequential(
+  (0): JPEGFilter(EmptyDefense (Identity))
+))
+[2020/07/01 12:40:02] - Accuracy with Defenced images: 0.2259
+[2020/07/01 12:47:39] - (Sequential(
+  (0): BitSqueezing(EmptyDefense (Identity))
+), Sequential(
+  (0): MedianSmoothing2D(EmptyDefense (Identity))
+), <function Kmeans_cluster at 0x7f320dac2830>)
+[2020/07/01 12:47:39] - Accuracy with Defenced images: 0.3416
+[2020/07/01 12:47:51] - (Sequential(
+  (0): BitSqueezing(EmptyDefense (Identity))
+), Sequential(
+  (0): JPEGFilter(EmptyDefense (Identity))
+), Sequential(
+  (0): MedianSmoothing2D(EmptyDefense (Identity))
+))
+[2020/07/01 12:47:51] - Accuracy with Defenced images: 0.2266
+[2020/07/01 12:57:44] - (Sequential(
+  (0): BitSqueezing(EmptyDefense (Identity))
+), Sequential(
+  (0): JPEGFilter(EmptyDefense (Identity))
+), <function Kmeans_cluster at 0x7f320dac2830>)
+[2020/07/01 12:57:44] - Accuracy with Defenced images: 0.3562
+[2020/07/01 13:05:47] - (Sequential(
+  (0): BitSqueezing(EmptyDefense (Identity))
+), <function Kmeans_cluster at 0x7f320dac2830>, Sequential(
+  (0): MedianSmoothing2D(EmptyDefense (Identity))
+))
+[2020/07/01 13:05:47] - Accuracy with Defenced images: 0.3532
+[2020/07/01 13:13:57] - (Sequential(
+  (0): BitSqueezing(EmptyDefense (Identity))
+), <function Kmeans_cluster at 0x7f320dac2830>, Sequential(
+  (0): JPEGFilter(EmptyDefense (Identity))
+))
+[2020/07/01 13:13:57] - Accuracy with Defenced images: 0.3660
+[2020/07/01 13:14:09] - (Sequential(
+  (0): MedianSmoothing2D(EmptyDefense (Identity))
+), Sequential(
+  (0): BitSqueezing(EmptyDefense (Identity))
+), Sequential(
+  (0): JPEGFilter(EmptyDefense (Identity))
+))
+[2020/07/01 13:14:09] - Accuracy with Defenced images: 0.2259
+[2020/07/01 13:21:47] - (Sequential(
+  (0): MedianSmoothing2D(EmptyDefense (Identity))
+), Sequential(
+  (0): BitSqueezing(EmptyDefense (Identity))
+), <function Kmeans_cluster at 0x7f320dac2830>)
+[2020/07/01 13:21:47] - Accuracy with Defenced images: 0.3421
+[2020/07/01 13:21:59] - (Sequential(
+  (0): MedianSmoothing2D(EmptyDefense (Identity))
+), Sequential(
+  (0): JPEGFilter(EmptyDefense (Identity))
+), Sequential(
+  (0): BitSqueezing(EmptyDefense (Identity))
+))
+[2020/07/01 13:21:59] - Accuracy with Defenced images: 0.2285
+[2020/07/01 13:31:56] - (Sequential(
+  (0): MedianSmoothing2D(EmptyDefense (Identity))
+), Sequential(
+  (0): JPEGFilter(EmptyDefense (Identity))
+), <function Kmeans_cluster at 0x7f320dac2830>)
+[2020/07/01 13:31:56] - Accuracy with Defenced images: 0.3777
+[2020/07/01 13:41:50] - (Sequential(
+  (0): MedianSmoothing2D(EmptyDefense (Identity))
+), <function Kmeans_cluster at 0x7f320dac2830>, Sequential(
+  (0): BitSqueezing(EmptyDefense (Identity))
+))
+[2020/07/01 13:41:50] - Accuracy with Defenced images: 0.3453
+[2020/07/01 13:51:54] - (Sequential(
+  (0): MedianSmoothing2D(EmptyDefense (Identity))
+), <function Kmeans_cluster at 0x7f320dac2830>, Sequential(
+  (0): JPEGFilter(EmptyDefense (Identity))
+))
+[2020/07/01 13:51:54] - Accuracy with Defenced images: 0.3861
+[2020/07/01 13:52:06] - (Sequential(
+  (0): JPEGFilter(EmptyDefense (Identity))
+), Sequential(
+  (0): BitSqueezing(EmptyDefense (Identity))
+), Sequential(
+  (0): MedianSmoothing2D(EmptyDefense (Identity))
+))
+[2020/07/01 13:52:06] - Accuracy with Defenced images: 0.2292
+[2020/07/01 14:00:00] - (Sequential(
+  (0): JPEGFilter(EmptyDefense (Identity))
+), Sequential(
+  (0): BitSqueezing(EmptyDefense (Identity))
+), <function Kmeans_cluster at 0x7f320dac2830>)
+[2020/07/01 14:00:00] - Accuracy with Defenced images: 0.3552
+[2020/07/01 14:00:13] - (Sequential(
+  (0): JPEGFilter(EmptyDefense (Identity))
+), Sequential(
+  (0): MedianSmoothing2D(EmptyDefense (Identity))
+), Sequential(
+  (0): BitSqueezing(EmptyDefense (Identity))
+))
+[2020/07/01 14:00:13] - Accuracy with Defenced images: 0.2292
+[2020/07/01 14:09:57] - (Sequential(
+  (0): JPEGFilter(EmptyDefense (Identity))
+), Sequential(
+  (0): MedianSmoothing2D(EmptyDefense (Identity))
+), <function Kmeans_cluster at 0x7f320dac2830>)
+[2020/07/01 14:09:57] - Accuracy with Defenced images: 0.4033
+[2020/07/01 14:19:50] - (Sequential(
+  (0): JPEGFilter(EmptyDefense (Identity))
+), <function Kmeans_cluster at 0x7f320dac2830>, Sequential(
+  (0): BitSqueezing(EmptyDefense (Identity))
+))
+[2020/07/01 14:19:50] - Accuracy with Defenced images: 0.3583
+[2020/07/01 14:29:44] - (Sequential(
+  (0): JPEGFilter(EmptyDefense (Identity))
+), <function Kmeans_cluster at 0x7f320dac2830>, Sequential(
+  (0): MedianSmoothing2D(EmptyDefense (Identity))
+))
+[2020/07/01 14:29:44] - Accuracy with Defenced images: 0.3893
+[2020/07/01 14:39:36] - (<function Kmeans_cluster at 0x7f320dac2830>, Sequential(
+  (0): BitSqueezing(EmptyDefense (Identity))
+), Sequential(
+  (0): MedianSmoothing2D(EmptyDefense (Identity))
+))
+[2020/07/01 14:39:36] - Accuracy with Defenced images: 0.3510
+[2020/07/01 14:49:37] - (<function Kmeans_cluster at 0x7f320dac2830>, Sequential(
+  (0): BitSqueezing(EmptyDefense (Identity))
+), Sequential(
+  (0): JPEGFilter(EmptyDefense (Identity))
+))
+[2020/07/01 14:49:37] - Accuracy with Defenced images: 0.3708
+[2020/07/01 14:59:31] - (<function Kmeans_cluster at 0x7f320dac2830>, Sequential(
+  (0): MedianSmoothing2D(EmptyDefense (Identity))
+), Sequential(
+  (0): BitSqueezing(EmptyDefense (Identity))
+))
+[2020/07/01 14:59:31] - Accuracy with Defenced images: 0.3501
+[2020/07/01 15:09:32] - (<function Kmeans_cluster at 0x7f320dac2830>, Sequential(
+  (0): MedianSmoothing2D(EmptyDefense (Identity))
+), Sequential(
+  (0): JPEGFilter(EmptyDefense (Identity))
+))
+[2020/07/01 15:09:32] - Accuracy with Defenced images: 0.4051
+[2020/07/01 15:19:32] - (<function Kmeans_cluster at 0x7f320dac2830>, Sequential(
+  (0): JPEGFilter(EmptyDefense (Identity))
+), Sequential(
+  (0): BitSqueezing(EmptyDefense (Identity))
+))
+[2020/07/01 15:19:32] - Accuracy with Defenced images: 0.3664
+[2020/07/01 15:29:34] - (<function Kmeans_cluster at 0x7f320dac2830>, Sequential(
+  (0): JPEGFilter(EmptyDefense (Identity))
+), Sequential(
+  (0): MedianSmoothing2D(EmptyDefense (Identity))
+))
+[2020/07/01 15:29:34] - Accuracy with Defenced images: 0.4193
+[2020/07/01 17:21:49] - Namespace(adv_train=False, alpha=2, attack_type='fgsm', batch_size=128, data_dir='/mnt/storage0_8/torch_datasets/svhn-data', eps=16, fname='ensumble', iter=20, k=2, model='pr18', nb_defense=4)
+[2020/07/01 17:21:56] - Accuracy with Clean images:0.9615
+[2020/07/01 17:21:58] - Accuracy with Adversarial images: 0.0975
