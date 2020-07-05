@@ -18,7 +18,7 @@ from vgg import VGG11, VGG16
 
 def get_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--batch_size', type=int, default=128, help='batch_size')
+    parser.add_argument('--batch-size', type=int, default=128, help='batch_size')
     parser.add_argument('--fname', type=str, default='ensumble')
     parser.add_argument('--model',default='pr18', type=str,
                         choices=['pr18', 'vgg11', 'vgg16'])
