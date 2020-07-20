@@ -1,4 +1,4 @@
-python svhn_eva.py --defense km --attack-type pgd --eps 8 --model pr18 --k 2 --data-dir ../../datasets/svhn-data
+# python svhn_eva.py --defense km --attack-type pgd --eps 8 --model pr18 --k 2 --data-dir ../../datasets/svhn-data
 # python svhn_eva.py --defense km --attack-type pgd --eps 8 --model pr18 --k 3
 # python svhn_eva.py --defense km --attack-type pgd --eps 8 --model pr18 --k 4
 # python svhn_eva.py --defense km --attack-type pgd --eps 8 --model pr18 --k 5
