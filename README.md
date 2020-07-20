@@ -1,5 +1,5 @@
 # kmeans_defense
-**This is code for our paper: Harden Deep Convolutional Classifiers via K-means Reconstruction**
+**Source code for paper: Harden Deep Convolutional Classifiers via K-means Reconstruction**
 
 **Requirements**: scikit-learn, pytorch, torchattacks, and advertorch.
 
