@@ -1,0 +1,52 @@
+[2020/08/13 11:36:27] - Namespace(alpha=2, batch_size=128, data_dir='/mnt/storage0_8/torch_datasets/svhn-data', defense='km', eps=8, fname='test2', iter=20, k=2, model='pr18')
+[2020/08/13 11:46:50] - Accuracy with white noised images:0.9593
+[2020/08/13 11:46:50] - After process, the accuracy is:0.8712
+[2020/08/13 12:06:01] - Namespace(alpha=2, batch_size=128, data_dir='/mnt/storage0_8/torch_datasets/svhn-data', defense='km', eps=8, fname='test2', iter=20, k=2, model='pr18')
+[2020/08/13 12:16:40] - Accuracy with white noised images:0.9541
+[2020/08/13 12:16:40] - After process, the accuracy is:0.8669
+[2020/08/13 12:25:38] - Namespace(alpha=2, batch_size=128, data_dir='/mnt/storage0_8/torch_datasets/svhn-data', defense='km', eps=8, fname='test2', iter=20, k=2, model='pr18')
+[2020/08/13 12:36:35] - Accuracy with white noised images:0.9534
+[2020/08/13 12:36:35] - After process, the accuracy is:0.8634
+[2020/08/13 12:36:36] - Namespace(alpha=2, batch_size=128, data_dir='/mnt/storage0_8/torch_datasets/svhn-data', defense='km', eps=8, fname='test2', iter=20, k=3, model='pr18')
+[2020/08/13 12:52:48] - Accuracy with white noised images:0.9544
+[2020/08/13 12:52:48] - After process, the accuracy is:0.9236
+[2020/08/13 12:52:48] - Namespace(alpha=2, batch_size=128, data_dir='/mnt/storage0_8/torch_datasets/svhn-data', defense='km', eps=8, fname='test2', iter=20, k=4, model='pr18')
+[2020/08/13 13:13:06] - Accuracy with white noised images:0.9540
+[2020/08/13 13:13:06] - After process, the accuracy is:0.9371
+[2020/08/13 13:13:07] - Namespace(alpha=2, batch_size=128, data_dir='/mnt/storage0_8/torch_datasets/svhn-data', defense='km', eps=8, fname='test2', iter=20, k=5, model='pr18')
+[2020/08/13 13:37:47] - Accuracy with white noised images:0.9549
+[2020/08/13 13:37:47] - After process, the accuracy is:0.9431
+[2020/08/13 13:37:48] - Namespace(alpha=2, batch_size=128, data_dir='/mnt/storage0_8/torch_datasets/svhn-data', defense='bs', eps=8, fname='test2', iter=20, k=2, model='pr18')
+[2020/08/13 13:37:57] - Accuracy with white noised images:0.9546
+[2020/08/13 13:37:57] - After process, the accuracy is:0.8092
+[2020/08/13 13:37:58] - Namespace(alpha=2, batch_size=128, data_dir='/mnt/storage0_8/torch_datasets/svhn-data', defense='ms', eps=8, fname='test2', iter=20, k=2, model='pr18')
+[2020/08/13 13:38:08] - Accuracy with white noised images:0.9533
+[2020/08/13 13:38:08] - After process, the accuracy is:0.9543
+[2020/08/13 13:38:08] - Namespace(alpha=2, batch_size=128, data_dir='/mnt/storage0_8/torch_datasets/svhn-data', defense='jf', eps=8, fname='test2', iter=20, k=2, model='pr18')
+
+[2020/08/13 13:38:27] - Accuracy with white noised images:0.9533
+[2020/08/13 13:38:27] - After process, the accuracy is:0.8681
+[2020/08/13 14:26:41] - Namespace(alpha=2, batch_size=128, data_dir='/mnt/storage0_8/torch_datasets/svhn-data', defense='bs', eps=8, fname='test2', iter=20, k=2, model='vgg11')
+[2020/08/13 14:26:47] - Accuracy with white noised images:0.9458
+[2020/08/13 14:26:47] - After process, the accuracy is:0.8158
+[2020/08/13 14:26:48] - Namespace(alpha=2, batch_size=128, data_dir='/mnt/storage0_8/torch_datasets/svhn-data', defense='ms', eps=8, fname='test2', iter=20, k=2, model='vgg11')
+[2020/08/13 14:26:55] - Accuracy with white noised images:0.9458
+[2020/08/13 14:26:55] - After process, the accuracy is:0.9445
+[2020/08/13 14:26:56] - Namespace(alpha=2, batch_size=128, data_dir='/mnt/storage0_8/torch_datasets/svhn-data', defense='jf', eps=8, fname='test2', iter=20, k=2, model='vgg11')
+[2020/08/13 14:27:12] - Accuracy with white noised images:0.9467
+[2020/08/13 14:27:12] - After process, the accuracy is:0.8694
+[2020/08/13 15:01:10] - Namespace(alpha=2, batch_size=128, data_dir='/mnt/storage0_8/torch_datasets/svhn-data', defense='km', eps=8, fname='test2', iter=20, k=2, model='vgg11')
+[2020/08/13 15:12:40] - Accuracy with white noised images:0.9454
+[2020/08/13 15:12:40] - After process, the accuracy is:0.8534
+[2020/08/13 14:27:13] - Namespace(alpha=2, batch_size=128, data_dir='/mnt/storage0_8/torch_datasets/svhn-data', defense='bs', eps=8, fname='test2', iter=20, k=2, model='vgg16')
+[2020/08/13 14:27:21] - Accuracy with white noised images:0.9559
+[2020/08/13 14:27:21] - After process, the accuracy is:0.8313
+[2020/08/13 14:27:21] - Namespace(alpha=2, batch_size=128, data_dir='/mnt/storage0_8/torch_datasets/svhn-data', defense='ms', eps=8, fname='test2', iter=20, k=2, model='vgg16')
+[2020/08/13 14:27:30] - Accuracy with white noised images:0.9561
+[2020/08/13 14:27:30] - After process, the accuracy is:0.9539
+[2020/08/13 14:27:31] - Namespace(alpha=2, batch_size=128, data_dir='/mnt/storage0_8/torch_datasets/svhn-data', defense='jf', eps=8, fname='test2', iter=20, k=2, model='vgg16')
+[2020/08/13 14:27:48] - Accuracy with white noised images:0.9557
+[2020/08/13 14:27:48] - After process, the accuracy is:0.8761
+[2020/08/13 15:12:41] - Namespace(alpha=2, batch_size=128, data_dir='/mnt/storage0_8/torch_datasets/svhn-data', defense='km', eps=8, fname='test2', iter=20, k=2, model='vgg16')
+[2020/08/13 15:24:24] - Accuracy with white noised images:0.9550
+[2020/08/13 15:24:24] - After process, the accuracy is:0.8774
