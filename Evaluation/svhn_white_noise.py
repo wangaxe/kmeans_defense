@@ -124,30 +124,5 @@ def main():
     logger.info('Accuracy with white noised images:%.4f',(float(correct) / total))
     logger.info('After process, the accuracy is:%.4f',(float(def_correct) / total))
 
-    # model.eval()
-    # correct = 0
-    # total = 0
-    # for images, labels in adv_loader:
-    #     images = images.cuda()
-    #     outputs = model(images)
-    #     _, predicted = torch.max(outputs.data, 1)
-    #     total += labels.size(0)
-    #     correct += (predicted == labels.cuda()).sum()
-
-    # logger.info('Accuracy with Adversarial images: %.4f',(float(correct) / total))
-
-    # model.eval()
-    # correct = 0
-    # total = 0
-    # for images, labels in adv_loader:
-    #     images = images.cuda()
-    #     images = defense(images)
-    #     outputs = model(images)
-    #     _, predicted = torch.max(outputs.data, 1)
-    #     total += labels.size(0)
-    #     correct += (predicted == labels.cuda()).sum()
-        
-    # logger.info('Accuracy with Defenced images: %.4f',(float(correct) / total))
-
 if __name__ == "__main__":
     main()
