@@ -109,8 +109,8 @@ def main():
     for images, labels in test_loader:
         images = images.cuda()
         wn = torch.zeros_like(images).cuda()
-        for i in range(wn.shape[1]):
-            wn[:, i, :, :].normal_(0, 8./255)
+        # for i in range(wn.shape[1]):
+        #     wn[:, i, :, :].normal_(0, 8./255)
         outputs = model(images+wn)
         _, predicted = torch.max(outputs.data, 1)
         total += labels.size(0)

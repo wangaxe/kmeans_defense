@@ -90,25 +90,26 @@
 # python svhn_eva.py --defense jf --attack-type deepfool --iter 100 --model vgg11 --fname deepfool
 # python svhn_eva.py --defense jf --attack-type deepfool --iter 100 --model vgg16 --fname deepfool
 
-# CUDA_VISIBLE_DEVICES=3 python svhn_white_noise_uap.py --model pr18 --k 2
-# CUDA_VISIBLE_DEVICES=3 python svhn_white_noise_uap.py --model pr18 --k 3
-# CUDA_VISIBLE_DEVICES=3 python svhn_white_noise_uap.py --model pr18 --k 4
-# CUDA_VISIBLE_DEVICES=3 python svhn_white_noise_uap.py --model pr18 --k 5
+# CUDA_VISIBLE_DEVICES=3 python svhn_white_noise.py --model pr18 --k 2
+# CUDA_VISIBLE_DEVICES=3 python svhn_white_noise.py --model pr18 --k 3
+# CUDA_VISIBLE_DEVICES=3 python svhn_white_noise.py --model pr18 --k 4
+# CUDA_VISIBLE_DEVICES=3 python svhn_white_noise.py --model pr18 --k 5
 
-# CUDA_VISIBLE_DEVICES=3 python svhn_white_noise_uap.py --defense bs 
-# CUDA_VISIBLE_DEVICES=3 python svhn_white_noise_uap.py --defense ms
-# CUDA_VISIBLE_DEVICES=3 python svhn_white_noise_uap.py --defense jf
+CUDA_VISIBLE_DEVICES=3 python svhn_white_noise.py --defense bs --fname clean
+CUDA_VISIBLE_DEVICES=3 python svhn_white_noise.py --defense ms --fname clean
+CUDA_VISIBLE_DEVICES=3 python svhn_white_noise.py --defense jf --fname clean
+CUDA_VISIBLE_DEVICES=3 python svhn_white_noise.py --defense km --fname clean
 
-# CUDA_VISIBLE_DEVICES=3 python svhn_white_noise_uap.py --defense bs --model vgg11 
-# CUDA_VISIBLE_DEVICES=3 python svhn_white_noise_uap.py --defense ms --model vgg11
-# CUDA_VISIBLE_DEVICES=3 python svhn_white_noise_uap.py --defense jf --model vgg11
-CUDA_VISIBLE_DEVICES=3 python svhn_white_noise_uap.py --defense km --model vgg11
+CUDA_VISIBLE_DEVICES=3 python svhn_white_noise.py --defense bs --model vgg11 --fname clean
+CUDA_VISIBLE_DEVICES=3 python svhn_white_noise.py --defense ms --model vgg11 --fname clean
+CUDA_VISIBLE_DEVICES=3 python svhn_white_noise.py --defense jf --model vgg11 --fname clean
+CUDA_VISIBLE_DEVICES=3 python svhn_white_noise.py --defense km --model vgg11 --fname clean
 
-# CUDA_VISIBLE_DEVICES=3 python svhn_white_noise_uap.py --defense bs --model vgg16
-# CUDA_VISIBLE_DEVICES=3 python svhn_white_noise_uap.py --defense ms --model vgg16
-# CUDA_VISIBLE_DEVICES=3 python svhn_white_noise_uap.py --defense jf --model vgg16
-CUDA_VISIBLE_DEVICES=3 python svhn_white_noise_uap.py --defense km --model vgg16
+CUDA_VISIBLE_DEVICES=3 python svhn_white_noise.py --defense bs --model vgg16 --fname clean
+CUDA_VISIBLE_DEVICES=3 python svhn_white_noise.py --defense ms --model vgg16 --fname clean
+CUDA_VISIBLE_DEVICES=3 python svhn_white_noise.py --defense jf --model vgg16 --fname clean
+CUDA_VISIBLE_DEVICES=3 python svhn_white_noise.py --defense km --model vgg16 --fname clean
 
-# CUDA_VISIBLE_DEVICES=3 python svhn_white_noise_uap.py --model vgg11 --fname white_noise
-# CUDA_VISIBLE_DEVICES=3 python svhn_white_noise_uap.py --model vgg16 --fname white_noise
-# CUDA_VISIBLE_DEVICES=3 python svhn_white_noise_uap.py --model pr18 --fname white_noise
+# CUDA_VISIBLE_DEVICES=3 python svhn_white_noise.py --model vgg11 --fname white_noise
+# CUDA_VISIBLE_DEVICES=3 python svhn_white_noise.py --model vgg16 --fname white_noise
+# CUDA_VISIBLE_DEVICES=3 python svhn_white_noise.py --model pr18 --fname white_noise
