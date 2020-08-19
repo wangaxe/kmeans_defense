@@ -114,22 +114,19 @@
 # python mnist_eva.py --defense jf --model B --attack-type deepfool --iter 100 --fname deepfool
 # python mnist_eva.py --defense jf --model C --attack-type deepfool --iter 100 --fname deepfool
 
-python mnist_white_noise.py --model LeNet --defense km --fname wn
-python mnist_white_noise.py --model LeNet --defense bs --fname wn
-python mnist_white_noise.py --model LeNet --defense jf --fname wn
-python mnist_white_noise.py --model LeNet --defense ms --fname wn
-
-python mnist_white_noise.py --model A --defense km --fname wn
-python mnist_white_noise.py --model A --defense bs --fname wn
-python mnist_white_noise.py --model A --defense jf --fname wn
-python mnist_white_noise.py --model A --defense ms --fname wn
-
-python mnist_white_noise.py --model B --defense km --fname wn
-python mnist_white_noise.py --model B --defense bs --fname wn
-python mnist_white_noise.py --model B --defense jf --fname wn
-python mnist_white_noise.py --model B --defense ms --fname wn
-
-python mnist_white_noise.py --model C --defense km --fname wn
-python mnist_white_noise.py --model C --defense bs --fname wn
-python mnist_white_noise.py --model C --defense jf --fname wn
-python mnist_white_noise.py --model C --defense ms --fname wn
+python mnist_white_noise.py --model LeNet --defense km --fname clean
+python mnist_white_noise.py --model LeNet --defense bs --fname clean
+python mnist_white_noise.py --model LeNet --defense jf --fname clean
+python mnist_white_noise.py --model LeNet --defense ms --fname clean
+python mnist_white_noise.py --model A --defense km --fname clean
+python mnist_white_noise.py --model A --defense bs --fname clean
+python mnist_white_noise.py --model A --defense jf --fname clean
+python mnist_white_noise.py --model A --defense ms --fname clean
+python mnist_white_noise.py --model B --defense km --fname clean
+python mnist_white_noise.py --model B --defense bs --fname clean
+python mnist_white_noise.py --model B --defense jf --fname clean
+python mnist_white_noise.py --model B --defense ms --fname clean
+python mnist_white_noise.py --model C --defense km --fname clean
+python mnist_white_noise.py --model C --defense bs --fname clean
+python mnist_white_noise.py --model C --defense jf --fname clean
+python mnist_white_noise.py --model C --defense ms --fname clean

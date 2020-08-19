@@ -1,0 +1,48 @@
+[2020/08/19 15:46:20] - Namespace(alpha=0.01, batch_size=128, data_dir='../../datasets/', defense='km', eps=0.3, fname='clean', iter=50, k=2, model='LeNet')
+[2020/08/19 15:52:39] - Accuracy with white noised images:0.9930
+[2020/08/19 15:52:39] - After process, the accuracy is:0.9910
+[2020/08/19 15:52:40] - Namespace(alpha=0.01, batch_size=128, data_dir='../../datasets/', defense='bs', eps=0.3, fname='clean', iter=50, k=2, model='LeNet')
+[2020/08/19 15:52:44] - Accuracy with white noised images:0.9930
+[2020/08/19 15:52:44] - After process, the accuracy is:0.9929
+[2020/08/19 15:52:45] - Namespace(alpha=0.01, batch_size=128, data_dir='../../datasets/', defense='jf', eps=0.3, fname='clean', iter=50, k=2, model='LeNet')
+[2020/08/19 15:52:53] - Accuracy with white noised images:0.9930
+[2020/08/19 15:52:53] - After process, the accuracy is:0.9916
+[2020/08/19 15:52:55] - Namespace(alpha=0.01, batch_size=128, data_dir='../../datasets/', defense='ms', eps=0.3, fname='clean', iter=50, k=2, model='LeNet')
+[2020/08/19 15:52:59] - Accuracy with white noised images:0.9930
+[2020/08/19 15:52:59] - After process, the accuracy is:0.9872
+[2020/08/19 15:53:00] - Namespace(alpha=0.01, batch_size=128, data_dir='../../datasets/', defense='km', eps=0.3, fname='clean', iter=50, k=2, model='A')
+[2020/08/19 15:59:06] - Accuracy with white noised images:0.9921
+[2020/08/19 15:59:06] - After process, the accuracy is:0.9920
+[2020/08/19 15:59:08] - Namespace(alpha=0.01, batch_size=128, data_dir='../../datasets/', defense='bs', eps=0.3, fname='clean', iter=50, k=2, model='A')
+[2020/08/19 15:59:12] - Accuracy with white noised images:0.9921
+[2020/08/19 15:59:12] - After process, the accuracy is:0.9913
+[2020/08/19 15:59:14] - Namespace(alpha=0.01, batch_size=128, data_dir='../../datasets/', defense='jf', eps=0.3, fname='clean', iter=50, k=2, model='A')
+[2020/08/19 15:59:22] - Accuracy with white noised images:0.9921
+[2020/08/19 15:59:22] - After process, the accuracy is:0.9900
+[2020/08/19 15:59:24] - Namespace(alpha=0.01, batch_size=128, data_dir='../../datasets/', defense='ms', eps=0.3, fname='clean', iter=50, k=2, model='A')
+[2020/08/19 15:59:29] - Accuracy with white noised images:0.9921
+[2020/08/19 15:59:29] - After process, the accuracy is:0.9863
+[2020/08/19 15:59:31] - Namespace(alpha=0.01, batch_size=128, data_dir='../../datasets/', defense='km', eps=0.3, fname='clean', iter=50, k=2, model='B')
+[2020/08/19 16:05:49] - Accuracy with white noised images:0.9906
+[2020/08/19 16:05:49] - After process, the accuracy is:0.9906
+[2020/08/19 16:05:50] - Namespace(alpha=0.01, batch_size=128, data_dir='../../datasets/', defense='bs', eps=0.3, fname='clean', iter=50, k=2, model='B')
+[2020/08/19 16:05:55] - Accuracy with white noised images:0.9906
+[2020/08/19 16:05:55] - After process, the accuracy is:0.9901
+[2020/08/19 16:05:56] - Namespace(alpha=0.01, batch_size=128, data_dir='../../datasets/', defense='jf', eps=0.3, fname='clean', iter=50, k=2, model='B')
+[2020/08/19 16:06:06] - Accuracy with white noised images:0.9906
+[2020/08/19 16:06:06] - After process, the accuracy is:0.9840
+[2020/08/19 16:06:07] - Namespace(alpha=0.01, batch_size=128, data_dir='../../datasets/', defense='ms', eps=0.3, fname='clean', iter=50, k=2, model='B')
+[2020/08/19 16:06:12] - Accuracy with white noised images:0.9906
+[2020/08/19 16:06:12] - After process, the accuracy is:0.9846
+[2020/08/19 16:06:14] - Namespace(alpha=0.01, batch_size=128, data_dir='../../datasets/', defense='km', eps=0.3, fname='clean', iter=50, k=2, model='C')
+[2020/08/19 16:12:28] - Accuracy with white noised images:0.9871
+[2020/08/19 16:12:28] - After process, the accuracy is:0.9821
+[2020/08/19 16:12:29] - Namespace(alpha=0.01, batch_size=128, data_dir='../../datasets/', defense='bs', eps=0.3, fname='clean', iter=50, k=2, model='C')
+[2020/08/19 16:12:33] - Accuracy with white noised images:0.9871
+[2020/08/19 16:12:33] - After process, the accuracy is:0.9854
+[2020/08/19 16:12:35] - Namespace(alpha=0.01, batch_size=128, data_dir='../../datasets/', defense='jf', eps=0.3, fname='clean', iter=50, k=2, model='C')
+[2020/08/19 16:12:43] - Accuracy with white noised images:0.9871
+[2020/08/19 16:12:43] - After process, the accuracy is:0.9830
+[2020/08/19 16:12:44] - Namespace(alpha=0.01, batch_size=128, data_dir='../../datasets/', defense='ms', eps=0.3, fname='clean', iter=50, k=2, model='C')
+[2020/08/19 16:12:48] - Accuracy with white noised images:0.9871
+[2020/08/19 16:12:48] - After process, the accuracy is:0.9826
