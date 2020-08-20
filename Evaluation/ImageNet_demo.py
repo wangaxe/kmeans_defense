@@ -2,6 +2,7 @@ import torch
 from torch.autograd import Variable
 import torch.nn as nn
 import torch.nn.functional as F
+from torchvision.utils import save_image
 # from torchsummary import summary
 import matplotlib.pyplot as plt
 import numpy as np
@@ -18,6 +19,7 @@ import time
 import datetime
 import random
 import torchvision.models as models
+
 # import attack_model
 # from utils import *
 # from models import *
@@ -26,7 +28,7 @@ import torchvision.models as models
 # import pretrainedmodels
 # from dictances import bhattacharyya_coefficient
 from torch.utils.data.sampler import SubsetRandomSampler, RandomSampler
-
+from cluster import Kmeans_cluster
 torch.cuda.empty_cache()
 
 model_name = 'wide_resnet50'
@@ -55,11 +57,12 @@ else:
         normalize,
     ])
 # trainset = torchvision.datasets.ImageFolder('/mnt/storage0_8/torch_datasets/ILSVRC/train/', transform=transform_data)
-testset = torchvision.datasets.ImageFolder('/mnt/storage0_8/torch_datasets/imagenet_val/', transform=transform_data)
+# testset = torchvision.datasets.ImageFolder('/mnt/storage0_8/torch_datasets/imagenet_val/', transform=transform_data)
+testset = torchvision.datasets.ImageFolder('../../datasets/imagenet_val/', transform=transform_data)
 
 torch.manual_seed(666)
 # train_loader = torch.utils.data.DataLoader(trainset, batch_size=batch_size, shuffle=True,num_workers=2)
-test_loader = torch.utils.data.DataLoader(testset, batch_size=100, shuffle=False,num_workers=2)
+test_loader = torch.utils.data.DataLoader(testset, batch_size=10, shuffle=False)
 
 # label_dict = trainset.class_to_idx
 # imagenet_dict = {v:k for k,v in label_dict.items()}
@@ -88,6 +91,8 @@ model = model.cuda()
 total = 0
 correct = 0
 
+km_correct = 0
+out_path = './test.png'
 for i, (X, y) in enumerate(test_loader):
 
     X, y = X.cuda(), y.cuda()
@@ -97,8 +102,16 @@ for i, (X, y) in enumerate(test_loader):
     _, predicted = torch.max(outputs.data, 1)
     total += y.size(0)
     correct += (predicted == y).sum()
+    
+    km_X = Kmeans_cluster(X,k=5)
+    save_image(km_X, out_path)
+    km_outputs = model(km_X)
+    _, km_predicted = torch.max(km_outputs.data, 1)
+    km_correct += (km_predicted == y).sum()
+    # print(f'true label: {y.data}, prediction: {predicted.data}, after km: {km_predicted.data}')
+    break
 
-print(f'Accuracy is {float(correct)/total:.4f}! total: {total}')
+print(f'Kmeans accuracy is {float(km_correct)/total:.4f}! Standard accuracy is {float(correct)/total:.4f}! total: {total}')
 
 
 
